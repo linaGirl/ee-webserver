@@ -1,0 +1,25 @@
+{
+      "name":           "ee-webserver"
+    , "description":    "simple webserver which can plug into many iridium modules"
+    , "version":        "0.1.0"
+    , "homepage":       "https://github.com/eventEmitter/ee-webserver"
+    , "author":         "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
+    , "repository": {
+        "url":          "https://github.com/eventEmitter/ee-webserver"
+    }
+    , "engines": {
+        "node":         "*"
+    }
+    , "bugs": {
+        "url":          "https://github.com/eventEmitter/ee-webserver/issues"
+    }
+    , "dependencies": {
+          "ee-class":   "*"
+        , "ee-event":   "*"
+        , "ee-log":     "*"
+        , "ee-argv":    "*"
+        , "ee-waiter":    "*"
+    }
+    , "devDependencies": {}
+    , "optionalDependencies": {}
+}

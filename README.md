@@ -1,4 +1,0 @@
-ee-webserver
-============
-
-simple webserver
