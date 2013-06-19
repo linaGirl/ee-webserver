@@ -18,7 +18,8 @@
         , "ee-event":   "*"
         , "ee-log":     "*"
         , "ee-argv":    "*"
-        , "ee-waiter":    "*"
+        , "ee-waiter":  "*"
+        , "ee-project": "*"
     }
     , "devDependencies": {}
     , "optionalDependencies": {}
