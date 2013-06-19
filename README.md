@@ -43,9 +43,4 @@ the available interface options are:
 
 the send method on the response class accepts the following parameters
 	
-	response.send( Buffer data );
-	response.send( String data );
-	response.send( int statusCode, Buffer data );
-	response.send( int statusCode, String data );
-	response.send( int statusCode, object headers, Buffer data );
-	response.send( int statusCode, object headers, String data );
+	response.send( [ data ], [ statusCode ], [ headers ] );
