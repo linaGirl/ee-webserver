@@ -12,7 +12,7 @@
 		}
 		, on: {
 			request: function( request, response ){
-				response.send( "hi ;)" );
+				response.send( null, { location: "/" }, 302 );
 			}
 		}
 	} ).listen();
