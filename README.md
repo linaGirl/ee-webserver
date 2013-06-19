@@ -19,7 +19,7 @@ a simple webserver which can listen on specific interfaces with a high level req
 		}
 	} ).listen();
 
-	// the sevrer listens now on 127.0.0.1 an [::1]
+	// the sevrer listens now on 127.0.0.1 and [::1]
 
 
 the available interface options are:

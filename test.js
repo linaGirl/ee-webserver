@@ -7,7 +7,7 @@
 
 	new Webserver( {
 		http: {
-			  interface: 	Webserver.IF_INTERNAL
+			  interface: 	Webserver.IF_ANY
 			, port:  		12001
 		}
 		, on: {
