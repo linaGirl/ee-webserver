@@ -1,7 +1,7 @@
 {
       "name":           "ee-webserver"
     , "description":    "simple webserver which can plug into many iridium modules"
-    , "version":        "0.1.11"
+    , "version":        "0.1.12"
     , "homepage":       "https://github.com/eventEmitter/ee-webserver"
     , "author":         "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "repository": {
