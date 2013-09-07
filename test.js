@@ -12,6 +12,7 @@
 		}
 		, on: {
 			request: function( request, response ){
+				request.abort( 413 );
 				response.send( "yeah!" );
 			}
 		}

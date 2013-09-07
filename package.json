@@ -1,25 +1,27 @@
 {
-      "name":           "ee-webserver"
-    , "description":    "simple webserver which can plug into many iridium modules"
-    , "version":        "0.1.13"
-    , "homepage":       "https://github.com/eventEmitter/ee-webserver"
-    , "author":         "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
+      "name"                    : "ee-webserver"
+    , "description"             : "simple webserver which can plug into many iridium modules"
+    , "version"                 : "0.1.14"
+    , "homepage"                : "https://github.com/eventEmitter/ee-webserver"
+    , "author"                  : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
+    , "licence"                 : "MIT"
+    , "os"                      : "linux"
     , "repository": {
-        "url":          "https://github.com/eventEmitter/ee-webserver"
+        "url"                   : "https://github.com/eventEmitter/ee-webserver"
     }
     , "engines": {
-        "node":         "*"
+        "node"                  : ">=0.10.7"
     }
     , "bugs": {
-        "url":          "https://github.com/eventEmitter/ee-webserver/issues"
+        "url"                   : "https://github.com/eventEmitter/ee-webserver/issues"
     }
     , "dependencies": {
-          "ee-class":   "*"
-        , "ee-event":   "*"
-        , "ee-log":     "*"
-        , "ee-argv":    "*"
-        , "ee-waiter":  "*"
-        , "ee-project": "*"
+          "ee-class"            : "*"
+        , "ee-event"            : "*"
+        , "ee-log"              : "*"
+        , "ee-argv"             : "*"
+        , "ee-waiter"           : "*"
+        , "ee-project"          : "*"
     }
     , "devDependencies": {}
     , "optionalDependencies": {}
