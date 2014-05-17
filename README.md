@@ -247,6 +247,11 @@ The removeHeader method removes any instance of the specified header.
 
 	response.removeHeader('Content-Type');
 
+### getRequest method
+
+The getRequest method returns the native node http response object
+
+	var res = response.getResponse();
 
 ### send method
 
