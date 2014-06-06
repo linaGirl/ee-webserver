@@ -7,7 +7,7 @@
 
 
 	var   request 		= require('request')
-		, Webserver 	= require('../')	
+		, Webserver 	= require('../.')
 		, crypto 		= require('crypto');
 
 

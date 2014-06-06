@@ -307,3 +307,46 @@ the end method will end the response.
 	} ).listen(function(err){
 		// the server listens now on 127.0.0.1 and [::1]
 	});
+
+#testing
+To simplify testing for other applications the internal `Request` and `Response` can now be filled with
+mock objects found in the testing sub. Consider the following options:
+
+    var EEWebserver = require('ee-webserver');
+    var requestOptions = {
+            host: 'some.test.com'
+            , headers: {
+                "accept-language":  'de',
+                "accept":           'application/json;q=1, application/xml;q=0.8, */*;q=0.1'
+            }
+            , remoteAddress: '127.0.0.2'
+            , url: '/some/path/var/?varOne=1&varTwo=salee'
+            , method: 'POST'
+        }
+        , responseOptions = {
+             headers:{'content-type':'text/plain'}
+             , status: 404
+        };
+
+These options can be inserted into the mock objects:
+
+    var   mockRequest = new EEWebserver.testing.MockRequest(requestOptions)
+        , testRequest = new EEWebserver.Request(mockRequest)
+
+        , mockResponse = new EEWebserver.testing.MockResponse(responseOptions)
+        , testResponse = new EEWebserver.Response({
+            request: testRequest
+            , response: mockResponse
+        });
+
+This now allows you to inject `Request/Response` pairs e.g. into your middleware and inspect their state, or the state
+of the wrapped HTTPRequests. For instance, we could check if the response status and content is correct:
+
+    mockResponse.on('end', function(content){
+        assert.equal(this.status, 200);
+        assert.equal(content.toString(), '<h1>some html</h1>');
+        assert.equal(this.headers['content-type'], 'text/html');
+    }.bind(mockResponse));
+    myapplication.request(testRequest, testResponse);
+
+For more information please consult the tests in `test/MockObjectsTests.js`.
