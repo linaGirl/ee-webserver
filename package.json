@@ -1,7 +1,7 @@
 {
       "name"                        : "ee-webserver"
     , "description"                 : "A simple webserver used by the ee framework"
-    , "version"                     : "0.3.19"
+    , "version"                     : "0.3.20"
     , "homepage"                    : "https://github.com/eventEmitter/ee-webserver"
     , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "licence"                     : "MIT"
