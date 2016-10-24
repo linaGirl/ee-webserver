@@ -18,7 +18,7 @@
 
 	var config = {
 		  port: 13023
-		, interface: Webserver.IF_ANY
+		, interface: Webserver.constants.IF_ANY
 	};
 
 
@@ -37,9 +37,8 @@
 						server.close(done);
 					}.bind(this));
 
-					var  r = request.get('http://127.0.0.1:13023/');
+					var r = request.get('http://127.0.0.1:13023/');
 				}
 			});
 		});
 	});
-	
