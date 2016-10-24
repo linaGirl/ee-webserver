@@ -1,34 +1,34 @@
 {
       "name"                        : "ee-webserver"
     , "description"                 : "A simple webserver used by the ee framework"
-    , "version"                     : "0.3.24"
+    , "version"                     : "1.0.0"
     , "homepage"                    : "https://github.com/eventEmitter/ee-webserver"
     , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
-    , "licence"                     : "MIT"
+    , "license"                     : "MIT"
     , "repository": {
           "url"                     : "https://github.com/eventEmitter/ee-webserver.git"
         , "type"                    : "git"
     }
     , "engines": {
-        "node"                      : ">=0.10.7"
+        "node"                      : ">=6"
     }
     , "bugs": {
         "url"                       : "https://github.com/eventEmitter/ee-webserver/issues"
     }
     , "dependencies": {
-          "ee-class"                : "0.2.x"
-        , "ee-event-emitter"        : "0.1.x"
-        , "ee-log"                  : "0.2.x"
+          "ee-class"                : "1.x"
+        , "ee-types"                : "2.x"
+        , "ee-event-emitter"        : "0.3.x"
+        , "ee-log"                  : "0.3.x"
         , "ee-argv"                 : "0.1.x"
         , "ee-waiter"               : "0.1.x"
         , "ee-project"              : "0.2.x"
-        , "ee-types"                : "0.1.x"
         , "ee-error"                : "0.1.x"
     }
     , "devDependencies": {
-          "mocha"                   : "1.17.x"
+          "mocha"                   : "2.x"
         , "ee-travis"               : "0.1.x"
-        , "request"                 : "2.34.x"
+        , "request"                 : "2.x"
     }
     , "optionalDependencies": {}
     , "keywords"                    : ["webserver", "http", "port"]
