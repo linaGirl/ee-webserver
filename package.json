@@ -3,7 +3,7 @@
     , "description"                 : "A simple webserver used by the ee framework"
     , "version"                     : "1.0.0"
     , "homepage"                    : "https://github.com/eventEmitter/ee-webserver"
-    , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
+    , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)"
     , "license"                     : "MIT"
     , "repository": {
           "url"                     : "https://github.com/eventEmitter/ee-webserver.git"
