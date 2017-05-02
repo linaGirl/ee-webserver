@@ -1,5 +1,7 @@
 # ee-webserver
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/ee-webserver.svg)](https://greenkeeper.io/)
+
 A simple webserver used by the ee framework.
 
 - listen on any interface class or hostname
